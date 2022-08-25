@@ -63,9 +63,24 @@ fn main() {
     // println!("5 % 4={}", num_3 % num_4);
     // num_3 += 1;
 
+    // --------> Phase five Random
+    // let random_num = rand::thread_rng().gen_range(1..101);
+    // println!("Random:{}", random_num);
 
-     // --------> Phase five Random
-     let random_num= rand :: thread_rng().gen_range(1..101);
-     println!("Random:{}",random_num);
+    // -------> phase six If
+    // let age = 8;
+    // if (age >= 1) && (age <= 18) {
+    //     println!("Important Birthday");
+    // } else if (age == 21) || (age == 50) {
+    //     println!("Important Birthday");
+    // } else if age >= 65 {
+    //     println!("Important Birthday");
+    // } else {
+    //     println!("Not an Important Birthday");
+    // }
 
+    // ------> phase seven ternary operator
+    let mut my_age = 47;
+    let can_vote = if my_age >= 18 { true } else { false };
+    println!("Can Vote:{}", can_vote);
 }
