@@ -1,8 +1,8 @@
 #![allow(unused)]
 
-use std::{i64::MAX, io};
+use std::io;
 // use std::io::*;
-// use rand::Rng;
+use rand::Rng;
 // extern crate rand;
 
 fn main() {
@@ -49,17 +49,23 @@ fn main() {
 
     // --------> Phase five Math
 
-    let num_1: f32 = 1.111111111111111;
-    println!("f32:{}", num_1 + 3.111111111111111);
-    let num_2: f64 = 1.111111111111111;
-    println!("f32:{}", num_1 + 0.111111111111111);
-    let mut num_3: u32 = 5;
+    // let num_1: f32 = 1.111111111111111;
+    // println!("f32:{}", num_1 + 3.111111111111111);
+    // let num_2: f64 = 1.111111111111111;
+    // println!("f32:{}", num_1 + 0.111111111111111);
+    // let mut num_3: u32 = 5;
 
-    let num_4: u32 = 5;
-    println!("5 + 4={}", num_3 + num_4);
-    println!("5 - 4={}", num_3 - num_4);
-    println!("5 * 4={}", num_3 * num_4);
-    println!("5 / 4={}", num_3 / num_4);
-    println!("5 % 4={}", num_3 % num_4);
-    num_3 += 1;
+    // let num_4: u32 = 5;
+    // println!("5 + 4={}", num_3 + num_4);
+    // println!("5 - 4={}", num_3 - num_4);
+    // println!("5 * 4={}", num_3 * num_4);
+    // println!("5 / 4={}", num_3 / num_4);
+    // println!("5 % 4={}", num_3 % num_4);
+    // num_3 += 1;
+
+
+     // --------> Phase five Random
+     let random_num= rand :: thread_rng().gen_range(1..101);
+     println!("Random:{}",random_num);
+
 }
