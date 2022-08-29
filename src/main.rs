@@ -2,7 +2,7 @@
 
 use std::io;
 // use std::io::*;
-use rand::Rng;
+// use rand::Rng;
 // extern crate rand;
 
 fn main() {
@@ -80,7 +80,16 @@ fn main() {
     // }
 
     // ------> phase seven ternary operator
-    let mut my_age = 47;
-    let can_vote = if my_age >= 18 { true } else { false };
-    println!("Can Vote:{}", can_vote);
+    // let mut my_age = 47;
+    // let can_vote = if my_age >= 18 { true } else { false };
+    // println!("Can Vote:{}", can_vote);
+
+    // -------> phase Eight Match
+    let age2: i32 = 21;
+    match age2 {
+        1..=18 => println!("Important Birthday"),
+        21 | 50 => println!("Important Birthday"),
+        65..=i32::MAX => println!("Important Birthday"),
+        _ => println!("Not an Important Birthday"),
+    }
 }
