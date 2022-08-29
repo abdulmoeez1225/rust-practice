@@ -1,6 +1,7 @@
 #![allow(unused)]
 
-use std::io;
+use std::{cmp::Ordering, io};
+
 // use std::io::*;
 // use rand::Rng;
 // extern crate rand;
@@ -84,12 +85,36 @@ fn main() {
     // let can_vote = if my_age >= 18 { true } else { false };
     // println!("Can Vote:{}", can_vote);
 
-    // -------> phase Eight Match
-    let age2: i32 = 21;
-    match age2 {
-        1..=18 => println!("Important Birthday"),
-        21 | 50 => println!("Important Birthday"),
-        65..=i32::MAX => println!("Important Birthday"),
-        _ => println!("Not an Important Birthday"),
+    // -------> phase Eight "Match"
+    // let age2: i32 = 21;
+    // match age2 {
+    //     1..=18 => println!("Important Birthday"),
+    //     21 | 50 => println!("Important Birthday"),
+    //     65..=i32::MAX => println!("Important Birthday"),
+    //     _ => println!("Not an Important Birthday"),
+    // }
+
+    // ------phase Nine Match example 2
+    // let my_age: i32 = 18;
+    // let voting_age: i32 = 18;
+    // match my_age.cmp(&voting_age) {
+    //     Ordering::Less => println!("Can't Vote"),
+    //     Ordering::Greater => println!("Can Vote"),
+    //     Ordering::Equal => println!("You gained the right to vote"),
+    // };
+
+    // -----> phasse ten Loop
+    let arr_2 = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+    let mut loop_idx = 0;
+    loop {
+        if arr_2[loop_idx] % 2 == 0 {
+            loop_idx += 1;
+            continue;
+        }
+        if arr_2[loop_idx] == 9 {
+            break;
+        }
+        println!("Val : {}", arr_2[loop_idx]);
+        loop_idx += 1;
     }
 }
